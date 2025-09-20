@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chota Whatsapp</title>
+  <link rel="stylesheet" href="/style.css"> <!-- ✅ Public CSS link -->
+</head>
+<body>
+  <h2>All Chats</h2>
+
+  <% for (let chat of allchats) { %>
+    <div class="chat-box">
+      <div class="chat-from">
+        <b>From:</b> <%= chat.from %>
+      </div>
+
+      <div class="chat-to">
+        <b>To:</b> <%= chat.to %>
+      </div>
+
+      <div class="chat-message">
+        <b>Message:</b> <%= chat.message %>
+      </div>
+    </div>
+  <% } %>
+</body>
+</html>
